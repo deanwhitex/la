@@ -87,12 +87,34 @@
       .hero p{max-width:42rem}
     }
 
+  
+
+    /* Compact, property-first opening */
+    header{background:#151512}
+    nav{height:70px}
+    .hero{grid-template-columns:minmax(0,1fr) 310px;gap:48px;padding:42px 0 46px;align-items:end}
+    h1{font-size:clamp(52px,6vw,84px);line-height:.9;letter-spacing:-.06em;margin-top:10px}
+    .hero p{font-size:15px;line-height:1.65;max-width:310px;margin:0 0 5px}
+    main{padding-top:48px}
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr;gap:18px;padding:40px 0 38px}
+      .hero p{max-width:38rem}
+    }
+    @media(max-width:640px){
+      nav{height:58px}
+      .brand{font-size:18px}
+      .hero{padding:34px 0 32px;gap:16px}
+      h1{font-size:clamp(46px,14vw,58px);line-height:.91;margin-top:8px}
+      .hero p{font-size:14px;line-height:1.55;max-width:31ch}
+      main{padding-top:36px}
+      .intro h2{font-size:34px}
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="wrap"><nav><div class="brand">The Collection <span>Los Angeles</span></div><div class="eyebrow nav-note">Private villa shortlist · 2026</div></nav></div>
-    <div class="wrap hero"><div><div class="eyebrow">Curated stays &amp; residences</div><h1>Los Angeles,<br><em>considered.</em></h1></div><p>A focused edit of exceptional homes across the Hollywood Hills, Beverly Hills, West Hollywood, Encino and Woodland Hills.</p></div>
+    <div class="wrap hero"><div><div class="eyebrow">Private villa shortlist · Los Angeles</div><h1>Los Angeles<br><em>Villas</em></h1></div><p>A refined selection of homes across the Hills, Beverly Hills, West Hollywood and the Valley.</p></div>
   </header>
   <main class="wrap">
     <section class="intro"><div><div class="eyebrow">The shortlist</div><h2>Homes with character.</h2></div><div class="eyebrow count"><span id="visible-count">18</span> properties</div></section>
