@@ -68,6 +68,25 @@
       .source{display:none}
       .card-footer{justify-content:flex-end}
     }
+  
+
+    /* Rebalanced page composition */
+    nav{gap:24px}
+    .brand{display:flex;align-items:baseline;gap:12px;white-space:nowrap}
+    .brand span{margin-left:0}
+    .nav-note{margin-left:auto;white-space:nowrap}
+    .hero{grid-template-columns:minmax(0,1fr) 270px;gap:56px;padding:72px 0 68px}
+    h1{font-size:clamp(56px,7vw,98px);line-height:.93;max-width:860px}
+    .hero p{font-size:15px;line-height:1.65;margin:0 0 4px}
+    main{padding-top:64px}
+    .intro{margin-bottom:28px}
+    .intro h2{font-size:clamp(34px,4vw,48px)}
+    @media(max-width:900px){
+      header{min-height:0}
+      .hero{grid-template-columns:1fr;gap:24px;padding:58px 0 48px}
+      .hero p{max-width:42rem}
+    }
+
   </style>
 </head>
 <body>
