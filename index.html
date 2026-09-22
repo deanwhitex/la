@@ -27,6 +27,47 @@
     footer{background:#dcd4c7;padding:22px 0;color:#4d4a43}.hidden{display:none}
     @media(max-width:900px){.wrap{padding:0 22px}.hero{grid-template-columns:1fr;padding:64px 0 54px;gap:36px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.image{height:250px}header{min-height:600px}}
     @media(max-width:560px){nav{height:64px}.brand{font-size:19px}.brand span{display:none}.nav-note{font-size:9px}.hero{padding:48px 0 42px;gap:28px}.hero p{font-size:14px;max-width:31rem}.hero .eyebrow{margin-bottom:8px}.intro{display:block;margin-bottom:25px}.intro .count{margin-top:16px}.grid{grid-template-columns:1fr;gap:14px}.image{height:270px}.card-content{padding:18px}.closing{margin-top:58px;display:block}.closing p{font-size:24px;margin-bottom:24px}main{padding:58px 0 70px}}
+  
+
+    /* Mobile-first property browsing */
+    @media(max-width:640px){
+      html,body{overflow-x:hidden}
+      .wrap{padding-left:16px;padding-right:16px}
+      header{min-height:0}
+      nav{height:60px}
+      .nav-note{display:none}
+      .hero{padding:50px 0 42px;gap:24px}
+      h1{font-size:clamp(43px,13vw,58px);line-height:.96;letter-spacing:-.065em;margin-top:10px}
+      .hero p{font-size:14px;line-height:1.62;max-width:33ch;margin:0;color:#d7d0c5}
+      main{padding:44px 0 64px}
+      .intro{margin-bottom:22px}
+      .intro h2{font-size:37px;line-height:1.02;margin-top:8px}
+      .intro .count{margin-top:13px}
+      .filters{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;margin:0 -16px 24px;padding:0 16px 4px;gap:8px;scrollbar-width:none}
+      .filters::-webkit-scrollbar{display:none}
+      .filter{flex:0 0 auto;min-height:42px;padding:10px 14px;font-size:10px;letter-spacing:.06em}
+      .grid{grid-template-columns:minmax(0,1fr);gap:16px}
+      .image{height:auto;aspect-ratio:4/3}
+      .number,.area{top:12px;bottom:auto}
+      .area{right:12px;left:auto}
+      .number{left:12px}
+      .card-content{padding:18px 17px 17px}
+      .location{font-size:23px;line-height:1.15;margin-bottom:9px}
+      .price{margin-bottom:16px;font-size:11px}
+      .card-footer{padding-top:13px;gap:10px}
+      .source{font-size:9px;letter-spacing:.07em;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+      .view{display:inline-flex;align-items:center;min-height:36px;padding:0 10px;border:1px solid var(--line);white-space:nowrap}
+      .closing{margin-top:48px;padding-top:28px}
+      .closing p{font-size:23px;line-height:1.2;margin-bottom:22px}
+      footer{padding:20px 0}
+    }
+    @media(max-width:360px){
+      .hero{padding-top:42px}
+      h1{font-size:43px}
+      .location{font-size:21px}
+      .source{display:none}
+      .card-footer{justify-content:flex-end}
+    }
   </style>
 </head>
 <body>
